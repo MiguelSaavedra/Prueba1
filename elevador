@@ -1,0 +1,85 @@
+package curso.utilizarElevador;
+public class Elevador {
+	public static void main(String[] args) {
+	
+		UtilizarElevador obj = new UtilizarElevador();
+		int boton = 0;
+		int posicionUsuario = 0;
+		int posicionDestino = 0;
+		int posicionElevador = 1;
+
+		for (int a = 0; a != 2; a++) {
+	
+			obj.pedirNuevamente = true;
+			while (obj.pedirNuevamente) {
+				System.out.println("Presione boton 1 para subir o boton 2 para bajar");
+				boton = (int) obj.leer();
+				if (boton == 1 || boton == 2) {
+					System.out.println("Ascensor en movimiento");
+				} else {
+					System.out.println("Opcion no existe");
+					a=0;
+				}
+
+			}
+			obj.pedirNuevamente = true;
+
+			while (obj.pedirNuevamente) {
+				System.out.println("¿En que piso esta?");
+				posicionUsuario = (int) obj.leer();
+				if (posicionUsuario > 0 && posicionUsuario < 16) {
+				} else {
+					System.out.println("Piso erroneo");
+					a=0;
+				}
+			}
+			System.out.println("Usted esta en el piso " + posicionUsuario);
+
+			if (posicionElevador > posicionUsuario) {
+				for (int i = posicionElevador; i != posicionUsuario; i--) {
+					posicionElevador--;
+					System.out.println("El elevador se encuentra en el piso " + posicionElevador);
+				}
+			} else if (posicionElevador < posicionUsuario) {
+				for (int i = posicionElevador; i != posicionUsuario; i++) {
+					posicionElevador++;
+					System.out.println("El elevador se encuentra en el piso " + posicionElevador);
+				}
+			}
+			System.out.println("Abriendo puertas");
+
+		
+			obj.pedirNuevamente = true;
+			while (obj.pedirNuevamente) {
+				System.out.println("Cerrando Puertas");
+				System.out.println("ingrese al piso que desea ir");
+				posicionDestino = (int) obj.leer();
+				if (posicionDestino > 0 && posicionDestino < 16) {
+				} else {
+					System.out.println("Piso erroneo");
+					a=0;
+				}
+			}
+
+
+			if (posicionDestino > posicionUsuario && boton == 1) {
+				for (int x = posicionElevador; x != posicionDestino; x++) {
+					posicionElevador++;
+					System.out.println("El elevador se encuentra en el piso " + posicionElevador);
+				}
+			} else if (posicionDestino < posicionUsuario && boton == 2) {
+				for (int x = posicionElevador; x != posicionDestino; x--) {
+					posicionElevador--;
+					System.out.println("El elevador se encuentra en el piso " + posicionElevador);
+				}
+			} else {
+				System.out.println("Boton erroneo");
+				a=0;
+			}
+			System.out.println("Abriendo Puertas");
+		
+			a = 0;
+		}
+	}
+}
+
