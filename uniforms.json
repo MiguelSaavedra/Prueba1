@@ -1,0 +1,164 @@
+{
+  "id": "",
+  "userM": "",
+  "userName": "",
+  "position": "EJECUTIVO DE SERVICIOS SR",
+  "positionCode": "TW221M",
+  "companyId": "",
+  "companyName": "",
+  "domicileType": "",
+  "orderType": "nuevo",
+  "sex": "F",
+  "hiringDate": "Apr 29, 2020 6:01:51 PM",
+  "references": "",
+  "status": "",
+  "clothes": [
+    {
+      "id": "blusa",
+      "alias": "Blusa",
+      "sex": "f",
+      "clothesMeasureTip": "Para saber tu talla de pantalón, es necesario que midas tu cintura.",
+      "fitType": "Corte slim fit",
+      "patternType": "Liso",
+      "measures": [
+        {
+          "id": "cintura",
+          "alias": "Cintura",
+          "sex": "f",
+          "imageUrl": "https://storage.googleapis.com/dev-bbva-uniformes-sp.appspot.com/resources/sizes/hombre_pantalon_cintura.png",
+          "instructions": "Debes tomar la medida de tu cintura de pantalón a la altura de donde normalmente lo usas. Desabróchalo y toma la medida por dentro, nunca por encima.",
+          "typeInput": "comboBox",
+          "dataType": "String",
+          "placeholder": "Talla del pantalón (pulgadas)",
+          "unitMeasure": "cm",
+          "clothesPart": "cintura",
+          "sizes": [
+            {
+              "id": "34",
+              "alias": "34",
+              "measureHelper": "Talla 34: 27 - 30",
+              "isSpecial": false,
+              "order": 0
+            },
+            {
+              "id": "38",
+              "alias": "38",
+              "measureHelper": "Talla 38: 35 - 38",
+              "isSpecial": false,
+              "order": 1
+            },
+            {
+              "id": "40",
+              "alias": "40",
+              "measureHelper": "Talla 40: 38 - 40",
+              "isSpecial": true,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "id": "manga",
+          "alias": "Largo manga",
+          "sex": "f",
+          "imageUrl": "https://storage.googleapis.com/dev-bbva-uniformes-sp.appspot.com/resources/sizes/hombre_pantalon_cintura.png",
+          "instructions": "Debes tomar la medida de tu cintura de pantalón a la altura de donde normalmente lo usas. Desabróchalo y toma la medida por dentro, nunca por encima.",
+          "typeInput": "comboBox",
+          "dataType": "String",
+          "placeholder": "Talla de manga",
+          "unitMeasure": "cm",
+          "clothesPart": "cintura",
+          "sizes": [
+            {
+              "id": "34",
+              "alias": "34",
+              "measureHelper": "Talla 34: 27 - 30",
+              "isSpecial": false,
+              "order": 0
+            },
+            {
+              "id": "38",
+              "alias": "38",
+              "measureHelper": "Talla 38: 35 - 38",
+              "isSpecial": false,
+              "order": 1
+            },
+            {
+              "id": "40",
+              "alias": "40",
+              "measureHelper": "Talla 40: 38 - 40",
+              "isSpecial": true,
+              "order": 2
+            }
+          ]
+        }
+      ],
+      "quantityPerKit": 5,
+      "maxQuantity": 5,
+      "minInteger": 4,
+      "isQuantityEditable": false,
+      "hasEligibleMeasure": true
+    },
+    {
+      "id": "pantalon",
+      "alias": "Pantalon",
+      "sex": "f",
+      "clothesMeasureTip": "Para saber tu talla de pantalón, es necesario que midas tu cintura.",
+      "fitType": "Normal",
+      "patternType": "Liso",
+      "measures": [
+        {
+          "id": "cintura",
+          "alias": "Cintura",
+          "sex": "f",
+          "imageUrl": "https://storage.googleapis.com/dev-bbva-uniformes-sp.appspot.com/resources/sizes/hombre_pantalon_cintura.png",
+          "instructions": "Debes tomar la medida de tu cintura de pantalón a la altura de donde normalmente lo usas. Desabróchalo y toma la medida por dentro, nunca por encima.",
+          "typeInput": "radioButton",
+          "dataType": "String",
+          "placeholder": "Talla del pantalón (pulgadas)",
+          "unitMeasure": "cm",
+          "clothesPart": "cintura",
+          "sizes": [
+            {
+              "id": "corto",
+              "alias": "Corto",
+              "measureHelper": "58 cm",
+              "isSpecial": false,
+              "order": 0
+            },
+            {
+              "id": "regular",
+              "alias": "Regular",
+              "measureHelper": "61 cm",
+              "isSpecial": false,
+              "order": 1
+            },
+            {
+              "id": "largo",
+              "alias": "Largo",
+              "measureHelper": "63 cm",
+              "isSpecial": true,
+              "order": 2
+            }
+          ]
+        }
+      ],
+      "quantityPerKit": 5,
+      "maxQuantity": 5,
+      "minInteger": 4,
+      "isQuantityEditable": false,
+      "hasEligibleMeasure": true
+    }
+  ],
+  "cr": {
+    "id": "",
+    "name": "",
+    "street": "",
+    "zipCode": "",
+    "neighborhood": "",
+    "state": "",
+    "city": "",
+    "division": "",
+    "coverage": ""
+  },
+  "requestDate": "Apr 29, 2020 6:01:51 PM"
+}
